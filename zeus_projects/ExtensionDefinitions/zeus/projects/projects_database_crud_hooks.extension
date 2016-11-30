@@ -1,0 +1,5 @@
+{
+  "extension":"/zeus/projects/projectsExtension",
+  "extension-point":"/zeus/projects/projects_database_crud_hooks",
+  "description":"Database CRUD extension for the '/ScriptingServices/zeus_projects/projects.js' service, managing the 'ZEUS_PROJECTS' table"
+}

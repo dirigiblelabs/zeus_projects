@@ -1,0 +1,15 @@
+{
+  "entityName":"Zeus_projects",
+  "tableName":"ZEUS_PROJECTS",
+  "tableType":"TABLE",
+  "serviceName":"projects.js",
+  "libraryName":"projects_lib.js",
+  "specification":"projects.swagger",
+  "getEnabled":"true",
+  "postEnabled":"true",
+  "putEnabled":"true",
+  "deleteEnabled":"true",
+  "countEnabled":"true",
+  "offsetAndLimitEnabled":"true",
+  "metadataEnabled":"true"
+}
