@@ -3,7 +3,7 @@
 
 var database = require('db/database');
 var datasource = database.getDatasource();
-var projectsDaoExtensionsUtils = require('zeus/projects/projectsDaoExtensionUtils');
+var projectsDaoExtensionsUtils = require('zeus/projects/utils/projectsDaoExtensionUtils');
 var user = require("net/http/user");
 
 // Create an entity
@@ -94,8 +94,7 @@ exports.update = function(entity) {
         statement.setString(++i, entity.project_tasks);
         statement.setString(++i, entity.project_documentation);
         statement.setInt(++i, entity.project_sol_id);
-        var id = entity.project_id;
-        statement.setInt(++i, id);
+        statement.setInt(++i, entity.project_id);
 		projectsDaoExtensionsUtils.beforeUpdate(connection, entity);
         statement.executeUpdate();
         projectsDaoExtensionsUtils.afterUpdate(connection, entity);

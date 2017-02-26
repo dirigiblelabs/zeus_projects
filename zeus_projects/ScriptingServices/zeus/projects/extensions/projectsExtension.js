@@ -1,5 +1,5 @@
 /*
-	Extension for the '/zeus_projects/projects_database_crud_hooks' Extension Point!
+	Extension for the '/zeus/projects/projects_database_crud_hooks' Extension Point!
 
 	The extension point allows having an extension implementation for the following functions:
 		- beforeCreate(connection, entity);

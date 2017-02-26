@@ -1,7 +1,7 @@
 /* globals $ */
 /* eslint-env node, dirigible */
 
-const EXT_POINT_NAME = "/zeus/projects/projects_database_crud_hooks";
+const EXT_POINT_NAME = "/zeus/projects/extension_points/projects_database_crud_hooks";
 
 var extensionService = require('core/extensions');
 
