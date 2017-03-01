@@ -9,7 +9,6 @@
 	
 	<title>Projects</title>
 	
-	
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
@@ -30,7 +29,6 @@
 			<table class="table table-condensed">
 				<thead>
 					<tr>
-						<th>#</th>
 						<th>Name</th>
 						<th>Sources</th>
 						<th>Issues</th>
@@ -42,8 +40,7 @@
 				<tbody>
 					<tr class="selected-{{entry._selected_}}" ng-repeat="entry in data"
 						ng-click="showInfoForEntry(entry)">
-						<td>{{entry.project_id}}</td>
-						<td>{{entry.project_name}}</td>
+						<td nowrap><i class="fa fa-play-circle"></i> {{entry.project_name}}</td>
 						<td>{{entry.project_source_repository}}</td>
 						<td>{{entry.project_issues}}</td>
 						<td>{{entry.project_tasks}}</td>
@@ -60,13 +57,13 @@
 			<br>
 			<!-- new, edit and delete buttons -->
 			<div class="btn-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				<input class="btn btn-default" type="button" value="New"
+				<input class="btn btn-default btn-sm" type="button" value="New"
 					ng-click="setOperation('new')"
 					ng-disabled="errorMessage || operation == 'new' || operation == 'update'"> <input
-					class="btn btn-default" type="button" value="Edit"
+					class="btn btn-default btn-sm" type="button" value="Edit"
 					ng-click="setOperation('update')"
 					ng-disabled="errorMessage || operation == 'new' || operation == 'update'"> <input
-					class="btn btn-default" type="button" value="Delete"
+					class="btn btn-default btn-sm" type="button" value="Delete"
 					ng-click="delete()"
 					ng-disabled="errorMessage || operation == 'new' || operation == 'update'">
 			</div>
@@ -124,9 +121,9 @@
 				<!-- save and cancel buttons -->
 				<div class="btn-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					<br>
-					<input class="btn btn-primary" type="button" value="Save" ng-show="operation == 'new' || operation == 'update'"
+					<input class="btn btn-primary btn-sm" type="button" value="Save" ng-show="operation == 'new' || operation == 'update'"
 						ng-click="confirmAction()"> 
-					<input class="btn btn-default" type="button" value="Cancel" ng-show="operation == 'new' || operation == 'update'"
+					<input class="btn btn-default btn-sm" type="button" value="Cancel" ng-show="operation == 'new' || operation == 'update'"
 						ng-click="cancelAction()">
 				</div>
 			</div>
